@@ -4,7 +4,7 @@ La Guerra Española resumida para aplicar los conceptos básicos de POO, Diseño
 
 ## Deployment
 
-To deploy this project run
+Estructura del proyecto
 
 ```php
 /laguerraesp
@@ -19,6 +19,7 @@ To deploy this project run
 │   │   ├── MazoModel.php
 │   │   ├── JugadorModel.php
 │   │   ├── PartidaModel.php
+│   ├── /imagenes
 │   └── /views
 │       ├── /auth
 │       │   ├── login.php
