@@ -1,6 +1,12 @@
 # laguerraesp
 La Guerra Española resumida para aplicar los conceptos básicos de POO, Diseño en capas y Patrones de Diseño
 
+
+## Deployment
+
+To deploy this project run
+
+```php
 /laguerraesp
 ├── /app
 │   ├── /controllers
@@ -43,3 +49,5 @@ La Guerra Española resumida para aplicar los conceptos básicos de POO, Diseño
     └── JugadorTest.php
     └── MazoTest.php
     └── UserTest.php
+
+```
