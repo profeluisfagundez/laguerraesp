@@ -1,7 +1,7 @@
 <?php
-require_once('Mazo.php');
+require_once('MazoModel.php');
 
-class Jugador
+class JugadorModel
 {
     private int $cantVidas;
     private string $nombre;
