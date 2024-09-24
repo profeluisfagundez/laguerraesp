@@ -5,12 +5,13 @@ class JugadorModel
 {
     private int $cantVidas;
     private string $nombre;
+    private string $contra;
     private Mazo $mazo;
 
-    public function __construct(string $nombre, int $cantVidas)
+    public function __construct(string $nombre, string $contra)
     {
         $this->nombre = $nombre;
-        $this->cantVidas = $cantVidas;
+        $this->contra = $contra;
         $this->mazo = new Mazo();
     }
 
@@ -34,6 +35,16 @@ class JugadorModel
     public function setNombre(string $value): void
     {
         $this->nombre = $value;
+    }
+
+    public function getContra(): string
+    {
+        return $this->contra;
+    }
+
+    public function setContra(string $value): void
+    {
+        $this->contra = $value;
     }
 
     public function getMazo(): Mazo

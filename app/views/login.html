@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../public/css/loginStyle.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-body">
+            <h2 class="card-title text-center">Iniciar Sesión</h2>
+            <form action="login.php" method="post">
+                <div class="mb-3">
+                    <label for="usuario" class="form-label">Usuario</label>
+                    <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuario" required>
+                </div>
+                <div class="mb-3">
+                    <label for="contraseña" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Contraseña" required>
+                </div>
+                <button type="submit" class="btn btn-dark">Ingresar</button>
+            </form>
+            <div class="forgot-password">
+                <a href="#">¿Olvidaste tu contraseña?</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS (opcional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

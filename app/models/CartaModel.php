@@ -10,7 +10,7 @@ class CartaModel
     private $imagen;
 
     // Constructor de la clase, le agregamos una validación de 0 a la cantidad de palos (4)
-    /*public function __construct($palo, $num)
+    public function __construct($palo, $num)
     {
         // Validación del índice del palo que se menciona arriba
         if ($palo >= 0 && $palo < count(self::PALOS)) {
@@ -21,17 +21,6 @@ class CartaModel
         // Asignación del número para la carta
         $this->num = $num;
         // Generar la imagen de la carta 
-        $this->actualizarImagen();
-    }*/
-
-    public function __construct($palo, $num)
-    {
-        if ($palo >=0 && $palo < count(self::PALOS)){
-            $this->palo = self::PALOS[$palo]; 
-        } else {
-            throw new Exception("Palo Invalido");
-        }
-        $this->num = $num;
         $this->actualizarImagen();
     }
 
