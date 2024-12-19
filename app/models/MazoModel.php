@@ -10,7 +10,7 @@ class MazoModel
     {
         for ($i = 0; $i < 4; $i++) {
             for ($j = 1; $j <= 12; $j++) {
-                $carta = new Carta($i, $j);
+                $carta = new CartaModel($i, $j);
                 array_push($this->mazo, $carta);
             }
         }
@@ -33,7 +33,7 @@ class MazoModel
         return count($this->mazo);
     }
 
-    public function getCartaAleatoria(): ?Carta
+    public function getCartaAleatoria(): ?CartaModel
     {
         // Si no quedan cartas, devolver null
         if ($this->contarCartasMazo() == 0) {
@@ -55,5 +55,14 @@ class MazoModel
     {
         shuffle($this->mazo);
     }
-}
 
+    public function reiniciarMazo():void {
+        $this->mazo = [];
+        for ($i = 0; $i < 4; $i++) {
+            for ($j = 1; $j <= 12; $j++) {
+                $carta = new CartaModel($i, $j);
+                array_push($this->mazo, $carta);
+            }
+        }
+    }
+}
