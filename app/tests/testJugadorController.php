@@ -5,10 +5,10 @@ require_once '../controller/JugadorController.php'; // Incluir la clase JugadorC
 $jugadorController = new JugadorController();
 
 // Crear un nuevo jugador
-$jugadorController->crearJugador("lfagundez", "48225577");
+//$jugadorController->crearJugador("lfagundez", "48225577");
 
 // Leer la información del jugador con el ID pasado por parámetro en el método 
-//$jugadorCRUD->leerJugador(2);
+$jugadorCRUD->leerJugador(1);
 
 // Actualizar la información del jugador con ID 1
 //$jugadorCRUD->actualizarJugador(1, "profeLuisFagundez", "48225577");
