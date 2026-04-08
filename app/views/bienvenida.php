@@ -34,7 +34,7 @@ if (!isset($_SESSION['IDUsuario'])) {
                         <a class="nav-link" href="#">Perfil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../.././app/">Salir</a>
+                        <a class="nav-link" href="../controller/cerrarSesion.php">Salir</a>
                     </li>
                 </ul>
             </div>

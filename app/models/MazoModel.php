@@ -4,12 +4,14 @@ require_once('CartaModel.php');
 
 class MazoModel
 {
+    //Declaro un array vacio
     private $mazo = [];
 
     public function __construct()
     {
         for ($i = 0; $i < 4; $i++) {
             for ($j = 1; $j <= 12; $j++) {
+                //creo la carta y la añado al mazo
                 $carta = new CartaModel($i, $j);
                 array_push($this->mazo, $carta);
             }
@@ -38,8 +40,7 @@ class MazoModel
         // Si no quedan cartas, devolver null
         if ($this->contarCartasMazo() == 0) {
             return null;
-        }
-        
+        } 
         // Seleccionar un índice aleatorio
         $indiceAleatorio = mt_rand(0, $this->contarCartasMazo() - 1);
         // Obtener la carta correspondiente:

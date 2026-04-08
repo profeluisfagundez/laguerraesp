@@ -9,7 +9,7 @@ class LoginController
     public function login(String $nombre, String $contraIngresada): void
     {
         if (isset($nombre, $contraIngresada)) {
-            // Crear instancia de JugadorCRUD
+            // Crear instancia de JugadorController
             $jugadorController = new JugadorController();
             // Buscar el ID del usuario en la tabla Usuario
             $sql = "SELECT IDUsuario FROM Usuario WHERE Nombre = ?";

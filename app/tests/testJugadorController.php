@@ -8,16 +8,16 @@ $jugadorController = new JugadorController();
 //$jugadorController->crearJugador("lfagundez", "48225577");
 
 // Leer la información del jugador con el ID pasado por parámetro en el método 
-$jugadorCRUD->leerJugador(1);
+$jugadorController->leerJugador(1);
 
 // Actualizar la información del jugador con ID 1
-//$jugadorCRUD->actualizarJugador(1, "profeLuisFagundez", "48225577");
+//$jugadorController->actualizarJugador(1, "profeLuisFagundez", "48225577");
 
 // Verificar la contraseña del jugador con ID 1
-//$jugadorCRUD->verificarContra(6, "48225577");
+//$jugadorController->verificarContra(6, "48225577");
 
-//$jugadorCRUD->leerJugadores();
+//$jugadorController->leerJugadores();
 
 // Eliminar un jugador con ID 1
-//$jugadorCRUD->eliminarJugador(1);
+//$jugadorController->eliminarJugador(1);
 ?>
